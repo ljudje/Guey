@@ -1,0 +1,120 @@
+.hero-section {
+  height: 100vh;
+  background-color: #ede9e1;
+  background-image: url('../images/24.jpg');
+  background-position: 50%;
+  background-size: 110%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.hero-image {
+  display: none;
+  position: absolute;
+}
+
+.p1 {
+  color: #000;
+  text-transform: uppercase;
+  font-family: Maple, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 100%;
+  position: static;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.p1-block {
+  margin: 20px;
+  padding: 10px;
+  position: static;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.p1-block._01 {
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: auto;
+}
+
+.p1-block._02 {
+  z-index: 1;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: auto;
+  right: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-section {
+    background-repeat: no-repeat;
+  }
+
+  .p1 {
+    font-size: 26px;
+  }
+
+  .p1-block._01 {
+    top: 20px;
+    left: auto;
+  }
+
+  .p1-block._02 {
+    top: auto;
+    bottom: 20px;
+    right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hero-section {
+    height: 90vh;
+    background-position: 45%;
+    background-size: 132%;
+  }
+
+  .p1 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 130%;
+  }
+
+  .p1-block._01 {
+    top: 2vh;
+  }
+
+  .p1-block._02 {
+    bottom: 2vh;
+  }
+
+  .body {
+    background-color: #ede9e1;
+    overflow: hidden;
+  }
+}
+
+
+@font-face {
+  font-family: 'Maple';
+  src: url('../fonts/Maple-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
